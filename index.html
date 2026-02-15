@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shadow Gamer Hub</title>
 
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #1a1a2e, #000000);
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 60px 20px;
+  background: linear-gradient(90deg, #ff00ff, #00ffff);
+  animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 20px #ff00ff; }
+  to { box-shadow: 0 0 40px #00ffff; }
+}
+
+h1 {
+  margin: 0;
+  font-size: 3.5em;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+.games {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #111827;
+  border-radius: 12px;
+  padding: 25px;
+  width: 220px;
+  transition: transform 0.3s;
+  box-shadow: 0 0 15px #00ffff;
+}
+
+.card:hover {
+  transform: scale(1.08);
+}
+
+button {
+  background: #00ffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+footer {
+  background: #020617;
+  padding: 20px;
+  margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🎮 Shadow Gamer Hub</h1>
+  <p>The ultimate gaming zone</p>
+</header>
+
+<section>
+  <h2>🔥 My Top Games</h2>
+
+  <div class="games">
+
+    <div class="card">
+      <h3>Your Game #1</h3>
+      <p>Add description here</p>
+      <button>Play</button>
+    </div>
+
+    <div class="card">
+      <h3>Your Game #2</h3>
+      <p>Add description here</p>
+      <button>Play</button>
+    </div>
+
+    <div class="card">
+      <h3>Your Game #3</h3>
+      <p>Add description here</p>
+      <button>Play</button>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>👾 About Me</h2>
+  <p>I’m a gamer who loves action, adventure, and competition.</p>
+</section>
+
+<footer>
+  <p>© 2026 Shadow Gamer Hub</p>
+</footer>
+
+</body>
+</html>
