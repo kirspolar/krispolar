@@ -1,115 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Kris's hub</title>
+  <meta charset="UTF-8">
+  <title>KrisPolar Gaming</title>
+  <style>
+    body {
+      background: #0d0d0d;
+      color: #fff;
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      text-align: center;
+    }
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #000000);
-  color: white;
-  text-align: center;
-}
+    header {
+      background: linear-gradient(90deg, #7a1cfb, #0ee7f6);
+      padding: 50px;
+      animation: glow 2s infinite alternate;
+    }
 
-header {
-  padding: 60px 20px;
-  background: linear-gradient(90deg, #ff00ff, #00ffff);
-  animation: glow 3s infinite alternate;
-}
+    @keyframes glow {
+      from { box-shadow: 0 0 10px #7a1cfb; }
+      to { box-shadow: 0 0 20px #0ee7f6; }
+    }
 
-@keyframes glow {
-  from { box-shadow: 0 0 20px #ff00ff; }
-  to { box-shadow: 0 0 40px #00ffff; }
-}
+    h1 {
+      margin: 0;
+      font-size: 3em;
+    }
 
-h1 {
-  margin: 0;
-  font-size: 3.5em;
-}
+    .content {
+      padding: 40px 20px;
+    }
 
-section {
-  padding: 50px 20px;
-}
+    .games {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
 
-.games {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
-}
+    .card {
+      background: #151515;
+      padding: 20px;
+      border: 2px solid #0ee7f6;
+      border-radius: 10px;
+      width: 220px;
+      transition: transform 0.3s, background 0.3s;
+    }
 
-.card {
-  background: #111827;
-  border-radius: 12px;
-  padding: 25px;
-  width: 220px;
-  transition: transform 0.3s;
-  box-shadow: 0 0 15px #00ffff;
-}
+    .card:hover {
+      transform: scale(1.08);
+      background: #1a1a1a;
+    }
 
-.card:hover {
-  transform: scale(1.08);
-}
-
-button {
-  background: #00ffff;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-footer {
-  background: #020617;
-  padding: 20px;
-  margin-top: 40px;
-}
-</style>
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background: #07070a;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-  <h1>🎮 Kris's hub</h1>
-  <p>The ultimate ga*ing zone</p>
+  <h1>🎮 KrisPolar Gaming</h1>
+  <p>Welcome to the gaming hub of KrisPolar</p>
 </header>
 
-<section>
-  <h2>🔥 My Top Ga*es</h2>
+<div class="content">
+  <h2>🔥 About Me</h2>
+  <p>I’m a gamer and creator — welcome to my gaming world! I love sharing my favorite games and gaming moments.</p>
 
+  <h2>🎯 Favorite Games</h2>
   <div class="games">
-
     <div class="card">
-      <h3>Your Game #1</h3>
-      <p>Add description here</p>
-      <button>Play</button>
+      <h3>Game 1</h3>
+      <p>Describe your favorite game here</p>
     </div>
-
     <div class="card">
-      <h3>Your Game #2</h3>
-      <p>Add description here</p>
-      <button>Play</button>
+      <h3>Game 2</h3>
+      <p>Describe another top game here</p>
     </div>
-
     <div class="card">
-      <h3>Your Game #3</h3>
-      <p>Add description here</p>
-      <button>Play</button>
+      <h3>Game 3</h3>
+      <p>Add another favorite here</p>
     </div>
-
   </div>
-</section>
 
-<section>
-  <h2>👾 About Me</h2>
-  <p>Im the best at every game and im TUFF.</p>
-</section>
+  <h2>📬 Contact</h2>
+  <p>Hit me up on GitHub or add your favorite social links!</p>
+</div>
 
 <footer>
-  <p>© 2026 Kris's hub</p>
+  <p>© 2026 KrisPolar Gaming</p>
 </footer>
 
 </body>
